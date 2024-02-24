@@ -28,10 +28,13 @@ function App({store}) {
                 <div className="Item-code">{item.code}</div>
                 <div className="Item-title">{item.title}</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 {item.count > 0 &&(
                     <div className="Item-count">Выделяли {item.count} раз</div>
                   )}
 =======
+=======
+>>>>>>> b7f64177ddce2ea12d7b6d7c2f75af9fd8402ae5
                 {item.count > 0 && (
                   <div className="Item-count">
                     Выделяли {item.count}
@@ -41,7 +44,10 @@ function App({store}) {
                       : " раз"}
                   </div>
                 )}
+<<<<<<< HEAD
 >>>>>>> b7f6417 (Исправлено задание 2 и дизайн)
+=======
+>>>>>>> b7f64177ddce2ea12d7b6d7c2f75af9fd8402ae5
                 <div className="Item-actions">
                   <button onClick={() => store.deleteItem(item.code)}>
                     Удалить

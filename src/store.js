@@ -6,11 +6,16 @@ class Store {
     this.state = initState;
     this.listeners = []; // Слушатели изменений состояния
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.generateNumber = 7; 
 =======
     //this.numberGenerate = this.state.list.length; //чем вам не рабочий вариант?
                                                     //Ниже есть вариант без использования конструктора
 >>>>>>> b7f6417 (Исправлено задание 2 и дизайн)
+=======
+    //this.numberGenerate = this.state.list.length; //чем вам не рабочий вариант?
+                                                    //Ниже есть вариант без использования конструктора
+>>>>>>> b7f64177ddce2ea12d7b6d7c2f75af9fd8402ae5
   }
 
   /**
@@ -48,6 +53,7 @@ class Store {
    */
   addItem() {
 <<<<<<< HEAD
+<<<<<<< HEAD
     const code = 0
     this.setState({
       ...this.state,
@@ -63,11 +69,23 @@ class Store {
         : 1;
     this.setState({
       ...this.state,
+=======
+    const code = 0;
+    const newCode =
+      this.state.list.length > 0
+        ? Math.max(...this.state.list.map((item) => item.code)) + 1
+        : 1;
+    this.setState({
+      ...this.state,
+>>>>>>> b7f64177ddce2ea12d7b6d7c2f75af9fd8402ae5
       list: [...this.state.list, {code: newCode, title: "Новая запись"}], //Задание №2
     });
     console.log(code);
   }
+<<<<<<< HEAD
 >>>>>>> b7f6417 (Исправлено задание 2 и дизайн)
+=======
+>>>>>>> b7f64177ddce2ea12d7b6d7c2f75af9fd8402ae5
 
   /**
    * Удаление записи по коду
@@ -92,12 +110,17 @@ class Store {
           item.selected = !item.selected;
           if (item.selected === true)
 <<<<<<< HEAD
+<<<<<<< HEAD
             item.count = item.count ? ++item.count: 1;
         } else { 
 =======
             item.count = item.count ? ++item.count : 1;
         } else {
 >>>>>>> b7f6417 (Исправлено задание 2 и дизайн)
+=======
+            item.count = item.count ? ++item.count : 1;
+        } else {
+>>>>>>> b7f64177ddce2ea12d7b6d7c2f75af9fd8402ae5
           item.selected = false; //Задание №1
         }
         return item;
